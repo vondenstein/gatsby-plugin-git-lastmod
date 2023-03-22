@@ -28,7 +28,7 @@ exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
     lastMod = new Date().toISOString()
   }
 
-  createPage({
+  return createPage({
     ...page,
     context: {
       ...page.context,
