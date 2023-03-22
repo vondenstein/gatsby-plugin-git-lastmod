@@ -1,0 +1,49 @@
+{
+  "name": "gatsby-plugin-git-lastmod",
+  "version": "0.1.0",
+  "description": "Gatsby plugin that adds lastmod field to pages based on git commit data",
+  "license": "MIT",
+  "homepage": "https://github.com/vondenstein/gatsby-plugin-git-lastmod",
+  "author": {
+    "name": "Stephen Vondenstein",
+    "email": "stephen@vondenstein.com",
+    "url": "https://vondenstein.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vondenstein/gatsby-plugin-git-lastmod"
+  },
+  "bugs": {
+    "email": "support@vondenstein.com",
+    "url": "https://github.com/vondenstein/gatsby-plugin-git-lastmod/issues"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "lastmod",
+    "git",
+    "sitemap",
+    "seo"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir . --ignore \"**/__tests__\""
+  },
+  "dependencies": {
+    "simple-git": "^3.17.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "babel-preset-gatsby-package": "^3.8.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^5.0.0",
+    "react": "^18.0.0 || ^0.0.0",
+    "react-dom": "^18.0.0 || ^0.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
