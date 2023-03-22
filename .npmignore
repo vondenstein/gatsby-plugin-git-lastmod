@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules
+src
+
+# Node files
+package-lock.json
+
+# GitHub files
+.github
+
+# Auto-Formatter files
+.prettierignore
+.prettierrc
