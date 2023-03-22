@@ -11,10 +11,8 @@ exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
 
   const { createPage } = actions
 
-  /***
-   * Add last modified date for sitemap using component name
-   * unless it is an mdx blog post, in which case use contentFilePath
-   ***/
+  // Add last modified date for sitemap using component name
+  // unless it is an mdx blog post, in which case use contentFilePath
   const filePath = page.component.split("?__contentFilePath=").pop()
   const fileLog = await simpleGit().log({
     file: filePath,
