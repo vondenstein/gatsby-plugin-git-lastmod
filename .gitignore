@@ -1,3 +1,9 @@
-# Dependency directories
+# Node files
 node_modules/
 jspm_packages/
+package-lock.json
+/*.js
+!index.js
+
+# Mac files
+.DS_Store
