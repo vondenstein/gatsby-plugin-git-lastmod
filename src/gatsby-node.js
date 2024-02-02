@@ -1,6 +1,5 @@
 const simpleGit = require(`simple-git`)
 import { pluginOptionsSchema } from "./options-validation"
-import { getDate } from "./repo"
 
 exports.pluginOptionsSchema = pluginOptionsSchema
 
@@ -50,7 +49,6 @@ exports.onCreatePage = async (
       maxCount: 1,
       strictDate: true,
     })
-    lastMod = await getDate(filePath, reporter)
   }
 
   // Handle fallback method
