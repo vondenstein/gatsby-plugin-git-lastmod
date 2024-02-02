@@ -85,3 +85,5 @@ the [`default config`](https://github.com/vondenstein/gatsby-plugin-git-lastmod/
 The options are as follows:
 
 - `useFallback` (boolean=false) Whether to use the current date as a fallback if the git commit date cannot be retrieved for a given page. If set to false, the date will be `undefined` and no `lastmod` value will be set in the sitemap for affected pages.
+
+- `continueWithoutRepo` (boolean=false) Whether to continue the Gatsby build if no git repository is found. If set to false, production builds will throw an error if a git repository cannot be found.
