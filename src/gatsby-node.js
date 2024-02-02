@@ -44,11 +44,13 @@ exports.onCreatePage = async (
 
   let lastMod
   if (repoExists) {
-    lastMod = await simpleGit().log({
-      file: filePath,
-      maxCount: 1,
-      strictDate: true,
-    })
+    lastMod = (
+      await simpleGit().log({
+        file: filePath,
+        maxCount: 1,
+        strictDate: true,
+      })
+    )?.latest?.date
   }
 
   // Handle fallback method
